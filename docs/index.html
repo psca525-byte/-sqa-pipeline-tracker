@@ -13,10 +13,10 @@
     --danger-soft:#FBE8E9; --blocked:#7C4DE0; --blocked-soft:#EFE9FC; --env:#0E7490; --env-soft:#E1F1F4;
     --mono:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace; --sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; --display:'Manrope',var(--sans);
   }
-  *{box-sizing:border-box} html{background:var(--navy)} body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased;padding:0 0 80px} .brand-strip{height:5px;background:linear-gradient(90deg,var(--navy) 0%,var(--accent) 100%)} .wrap{max-width:940px;margin:0 auto;padding:30px 20px 0}.page{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:22px;gap:16px;flex-wrap:wrap} h1{font-family:var(--display);font-size:27px;font-weight:800;letter-spacing:-0.01em;margin:0 0 4px;color:var(--navy)} .subtitle{color:var(--ink-soft);font-size:13.5px;margin:0}.view-badge{display:inline-flex;align-items:center;gap:6px;background:var(--navy-soft);color:var(--navy);font-size:12px;font-weight:700;padding:5px 12px;border-radius:20px;margin-bottom:18px}.view-badge::before{content:'●';color:var(--pending);font-size:9px} .sync-status{display:inline-flex;align-items:center;gap:8px;margin:0 0 18px;padding:6px 12px;border-radius:999px;background:#fff;border:1px solid var(--border);font-size:12px;color:var(--ink-soft);flex-wrap:wrap}.sync-dot{width:8px;height:8px;border-radius:50%;background:#99A1AE;display:inline-block}.sync-dot.live{background:#178A50}.sync-divider{color:var(--ink-faint)}.stats{display:flex;background:var(--surface);border:1px solid var(--border);border-radius:12px;margin-bottom:26px;overflow:hidden}.stat{flex:1;padding:16px 18px;border-right:1px solid var(--border)} .stat:last-child{border-right:none}.stat .num{font-family:var(--display);font-size:24px;font-weight:800;line-height:1}.stat .label{font-size:11.5px;color:var(--ink-soft);margin-top:5px;font-weight:500}.stat.tone-total .num{color:var(--navy)}.stat.tone-progress .num{color:var(--pending)}.stat.tone-blocked .num{color:var(--blocked)}.stat.tone-delivered .num{color:var(--delivered)}.stat.tone-bugs .num{color:var(--danger)}
-.queue{display:flex;flex-direction:column;gap:12px}.card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--border);border-radius:10px;padding:18px 18px 16px;box-shadow:0 1px 2px rgba(18,21,28,0.03)}.card-head{display:flex;align-items:flex-start;gap:12px;margin-bottom:12px}.pos{width:26px;height:26px;border-radius:7px;background:var(--navy-soft);color:var(--navy);font-family:var(--mono);font-size:12.5px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}.card-title-block{flex:1;min-width:0}.card-name-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:9px}.card-name{font-family:var(--display);font-size:15.5px;font-weight:800;color:var(--ink)}.status-select{font-family:var(--sans);font-size:11.5px;font-weight:700;padding:3px 10px 3px 22px;border-radius:20px;border:none;cursor:pointer;appearance:none;-webkit-appearance:none;background-repeat:no-repeat;background-position:8px center;background-size:7px 7px}.status-select.status-not-started{background-color:#EEF0F3;color:#5B6472;background-image:radial-gradient(circle,#5B6472 100%,transparent 0)}.status-select.status-in-progress{background-color:var(--pending-soft);color:var(--pending);background-image:radial-gradient(circle,var(--pending) 100%,transparent 0)}.status-select.status-blocked{background-color:var(--blocked-soft);color:var(--blocked);background-image:radial-gradient(circle,var(--blocked) 100%,transparent 0)}.status-select.status-ready{background-color:var(--done-soft);color:var(--done);background-image:radial-gradient(circle,var(--done) 100%,transparent 0)}.status-select.status-delivered{background-color:var(--delivered-soft);color:var(--delivered);background-image:radial-gradient(circle,var(--delivered) 100%,transparent 0)}.env-select{font-family:var(--mono);font-size:10.5px;font-weight:700;letter-spacing:0.02em;padding:3px 9px;border-radius:6px;border:1px solid transparent;cursor:pointer;background:var(--env-soft);color:var(--env);appearance:none;-webkit-appearance:none}.env-tag{font-family:var(--mono);font-size:10.5px;font-weight:700;letter-spacing:0.02em;padding:3px 9px;border-radius:6px;background:var(--env-soft);color:var(--env)}.pill{font-size:11.5px;font-weight:700;padding:3px 11px 3px 20px;border-radius:20px;position:relative}.pill::before{content:'';position:absolute;left:9px;top:50%;transform:translateY(-50%);width:6px;height:6px;border-radius:50%;background:currentColor}.pill.status-not-started{background:#EEF0F3;color:#5B6472}.pill.status-in-progress{background:var(--pending-soft);color:var(--pending)}.pill.status-blocked{background:var(--blocked-soft);color:var(--blocked)}.pill.status-ready{background:var(--done-soft);color:var(--done)}.pill.status-delivered{background:var(--delivered-soft);color:var(--delivered)}.no-date{color:var(--ink-faint);font-size:11.5px}.qe-wrap{display:flex;gap:6px;flex-wrap:wrap}.val{font-size:12.5px;color:var(--ink)}.val.mono{font-family:var(--mono)}.val.faint{color:var(--ink-faint);font-style:italic}.val.has-bugs{color:var(--danger);font-weight:700}.mark{width:16px;height:16px;border-radius:4px;display:inline-flex;align-items:center;justify-content:center;font-size:11px;flex-shrink:0}.task-row.done .mark{background:var(--done-soft);color:var(--done)}.task-row:not(.done) .mark{background:var(--bg);color:var(--ink-faint);border:1px solid var(--border)}.due-tag{font-family:var(--mono);padding:3px 9px;border-radius:6px;background:var(--pending-soft);color:var(--pending);font-size:11px;font-weight:600}.due-tag.overdue{background:var(--danger-soft);color:var(--danger)}.due-tag.ready{background:var(--done-soft);color:var(--done)}.card-meta-row{display:flex;gap:20px;flex-wrap:wrap;align-items:flex-start}.meta-field{display:flex;flex-direction:column;gap:5px}.meta-field>label{font-size:10px;font-weight:700;color:var(--ink-faint);text-transform:uppercase;letter-spacing:0.04em}.meta-field input{border:1px solid var(--border);border-radius:7px;padding:5px 8px;font-size:12.5px;font-family:inherit;color:var(--ink)}.meta-field input:focus{outline:2px solid var(--accent);outline-offset:-1px}.meta-field.iter input{width:90px;font-family:var(--mono)}.qe-checks{display:flex;flex-wrap:wrap;gap:8px 12px;max-width:280px}.qe-checks label{display:flex;align-items:center;gap:5px;font-size:12px;cursor:pointer;white-space:nowrap}.qe-checks input[type="checkbox"]{width:14px;height:14px;accent-color:var(--accent);cursor:pointer}.qe-display{display:flex;align-items:center;gap:6px;flex-wrap:wrap}.qe-tag{background:var(--accent-soft);color:var(--accent-dark);font-size:11px;font-weight:700;padding:3px 9px;border-radius:20px}.qe-empty{font-size:12px;color:var(--ink-faint);font-style:italic}.qe-edit-btn{background:none;border:none;color:var(--ink-faint);font-size:10.5px;font-weight:600;cursor:pointer;text-decoration:underline;padding:0}.qe-edit-btn:hover{color:var(--accent)}.qe-editor{margin-top:6px}.card-right{display:flex;flex-direction:column;align-items:flex-end;gap:8px;flex-shrink:0}.icon-btn{background:none;border:none;cursor:pointer;color:var(--ink-faint);padding:4px;display:flex;align-items:center;justify-content:center;border-radius:6px}.icon-btn:hover{background:var(--bg);color:var(--danger)}.progress-ring-wrap{display:flex;align-items:center;gap:8px}.progress-bar-mini{width:64px;height:6px;background:var(--bg);border-radius:4px;overflow:hidden}.progress-bar-mini>div{height:100%;background:var(--accent);border-radius:4px;transition:width .25s ease}.progress-pct{font-family:var(--mono);font-size:11.5px;font-weight:700;color:var(--ink-soft);width:34px;text-align:right}.card-tasks-row{display:flex;align-items:center;gap:20px;flex-wrap:wrap;padding-top:13px;border-top:1px solid var(--border);margin-top:6px}.task-row{display:flex;align-items:center;gap:7px;font-size:12.5px;cursor:pointer;user-select:none;color:var(--ink-soft)}.task-row input[type="checkbox"]{width:16px;height:16px;accent-color:var(--done);cursor:pointer}.task-row.done{color:var(--ink)}.task-row.done span{color:var(--ink-soft);text-decoration:line-through;text-decoration-color:var(--done)}.bug-count-row{display:flex;align-items:center;gap:7px;font-size:12.5px;color:var(--ink-soft);font-weight:500}.bug-count-row input[type="number"]{width:46px;padding:3px 6px;border:1px solid var(--border);border-radius:6px;font-family:var(--mono);font-size:12.5px}.no-tasks-note{font-size:12px;color:var(--ink-faint);font-style:italic}.card-footer-row{margin-left:auto}.delete-link{background:none;border:none;color:var(--danger);font-size:12px;cursor:pointer;opacity:.6}.delete-link:hover{opacity:1;text-decoration:underline}.empty{text-align:center;padding:60px 20px;color:var(--ink-soft)}.empty .big{font-size:32px;margin-bottom:6px}.overlay{position:fixed;inset:0;background:rgba(18,21,28,.5);display:none;align-items:center;justify-content:center;padding:20px;z-index:10}.overlay.open{display:flex}.modal{background:var(--surface);border-radius:14px;padding:26px;width:100%;max-width:420px;max-height:90vh;overflow-y:auto}.modal h2{font-family:var(--display);font-size:18px;font-weight:800;color:var(--navy);margin:0 0 18px}.field{margin-bottom:14px}.field label{display:block;font-size:12px;font-weight:700;color:var(--ink-soft);margin-bottom:5px}.field .hint{font-size:11px;color:var(--ink-faint);font-weight:400;margin-top:3px}.field input,.field select{width:100%;padding:9px 11px;border:1px solid var(--border);border-radius:8px;font-size:14px;font-family:inherit;background:#fff}.field input:focus,.field select:focus{outline:2px solid var(--accent);outline-offset:-1px}.field-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}.checkbox-group{display:flex;flex-direction:column;gap:8px}.checkbox-group label{display:flex;align-items:center;gap:8px;font-size:13.5px;font-weight:400;color:var(--ink);cursor:pointer}.checkbox-group input[type="checkbox"]{width:16px;height:16px;accent-color:var(--accent)}.modal-actions{display:flex;gap:8px;margin-top:18px}.modal-actions button{flex:1;padding:10px;border-radius:8px;font-size:14px;font-weight:700;cursor:pointer;border:none}.btn-cancel{background:var(--bg);color:var(--ink-soft)}.btn-cancel:hover{background:var(--border)}.status-line{font-size:11.5px;color:var(--ink-faint);text-align:center;margin-top:28px}
-button.secondary{background:var(--surface);color:var(--navy);border:1px solid var(--border);padding:9px 16px;border-radius:8px;font-size:13.5px;font-weight:600;cursor:pointer;transition:all .15s ease;white-space:nowrap}button.secondary:hover{background:var(--navy-soft);border-color:var(--navy)}button.primary{background:var(--navy);color:#fff;border:none;padding:10px 18px;border-radius:8px;font-size:13.5px;font-weight:700;cursor:pointer;transition:background .15s ease;white-space:nowrap}button.primary:hover{background:var(--accent-dark)}
-@media (max-width:640px){.stats{flex-wrap:wrap}.stat{flex:1 1 33%;border-bottom:1px solid var(--border)}.stat .num{font-size:19px}.card-head{flex-wrap:wrap}.card-right{flex-direction:row;align-items:center;width:100%;justify-content:flex-end;margin-top:8px}.field-row{grid-template-columns:1fr}.meta-field input{min-width:110px}.qe-checks{max-width:none}}
+  *{box-sizing:border-box} html{background:var(--navy)} body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased;padding:0 0 80px} .brand-stri[...]
+.queue{display:flex;flex-direction:column;gap:12px}.card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--border);border-radius:10px;padding:18px 18px 16px;box-[...]
+button.secondary{background:var(--surface);color:var(--navy);border:1px solid var(--border);padding:9px 16px;border-radius:8px;font-size:13.5px;font-weight:600;cursor:pointer;transition:all .15s e[...]
+@media (max-width:640px){.stats{flex-wrap:wrap}.stat{flex:1 1 33%;border-bottom:1px solid var(--border)}.stat .num{font-size:19px}.card-head{flex-wrap:wrap}.card-right{flex-direction:row;align-ite[...]
 </style>
 </head>
 <body>
@@ -67,7 +67,7 @@ button.secondary{background:var(--surface);color:var(--navy);border:1px solid va
       <div class="field"><label for="fEnv">Environment</label><select id="fEnv"><option value="Staging" selected>Staging</option><option value="Prod">Prod</option></select></div>
     </div>
     <div class="field"><label for="fDate">Delivery / due date</label><input id="fDate" type="date"><div class="hint">Projects are automatically ordered by this date, soonest first</div></div>
-    <div class="field"><label for="fStatus">Status</label><select id="fStatus"><option value="not-started">Not started</option><option value="in-progress" selected>In progress</option><option value="blocked">Blocked</option><option value="ready">Ready for delivery</option><option value="delivered">Delivered</option></select></div>
+    <div class="field"><label for="fStatus">Status</label><select id="fStatus"><option value="not-started">Not started</option><option value="in-progress" selected>In progress</option><option valu[...]
     <div class="field">
       <label>Which tracking items apply to this project?</label>
       <div class="checkbox-group">
@@ -110,15 +110,15 @@ const STATUS_DEFS = {
 };
 
 function getToken(){ return localStorage.getItem(TOKEN_KEY) || ''; }
-function setToken(){ const current = getToken(); const value = prompt('Paste your GitHub access token (kept only in this browser):', current); if(value !== null){ localStorage.setItem(TOKEN_KEY, value.trim()); loadProjects(); } }
+function setToken(){ const current = getToken(); const value = prompt('Paste your GitHub access token (kept only in this browser):', current); if(value !== null){ localStorage.setItem(TOKEN_KEY, [...]
 function b64EncodeUtf8(str){ return btoa(unescape(encodeURIComponent(str))); }
 function b64DecodeUtf8(str){ return decodeURIComponent(escape(atob(str))); }
 function uid(){ return Date.now().toString(36) + Math.random().toString(36).slice(2,7); }
 function fmtDate(d){ if(!d) return null; const dt = new Date(d + 'T00:00:00'); return dt.toLocaleDateString('en-US',{ month:'short', day:'numeric' }); }
 function daysUntil(d){ if(!d) return null; const today = new Date(); today.setHours(0,0,0,0); const target = new Date(d + 'T00:00:00'); return Math.round((target - today)/86400000); }
 function activeTasks(p){ return TASK_DEFS.filter(t => p[t.enabledKey] !== false); }
-function progressOf(p){ const tasks = activeTasks(p); if(tasks.length === 0) return p.status === 'ready' ? 100 : 0; const done = tasks.filter(t => p[t.key]).length; return Math.round((done / tasks.length) * 100); }
-function sortedByDueDate(list){ return [...list].sort((a,b) => { if(!a.deliveryDate && !b.deliveryDate) return 0; if(!a.deliveryDate) return 1; if(!b.deliveryDate) return -1; return new Date(a.deliveryDate) - new Date(b.deliveryDate); }); }
+function progressOf(p){ const tasks = activeTasks(p); if(tasks.length === 0) return p.status === 'ready' ? 100 : 0; const done = tasks.filter(t => p[t.key]).length; return Math.round((done / task[...]
+function sortedByDueDate(list){ return [...list].sort((a,b) => { if(!a.deliveryDate && !b.deliveryDate) return 0; if(!a.deliveryDate) return 1; if(!b.deliveryDate) return -1; return new Date(a.de[...]
 function statusOptionsHtml(current){ return Object.entries(STATUS_DEFS).map(([key,def]) => `<option value="${key}" ${key===current?'selected':''}>${def.label}</option>`).join(''); }
 function qeListOf(p){ return (p.qeNames || '').split(',').map(s => s.trim()).filter(Boolean); }
 function escapeHtml(str){ const div = document.createElement('div'); div.textContent = String(str ?? ''); return div.innerHTML; }
@@ -169,7 +169,7 @@ async function loadProjects(){
         render();
         return;
       }
-      const res = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${FILE_PATH}?ref=${BRANCH}`, { headers:{ Authorization:`Bearer ${token}`, Accept:'application/vnd.github+json' } });
+      const res = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${FILE_PATH}?ref=${BRANCH}`, { headers:{ Authorization:`Bearer ${token}`, Accept:'application/vnd.g[...]
       if(!res.ok) throw new Error('GitHub read failed');
       const data = await res.json();
       currentSha = data.sha;
@@ -192,20 +192,47 @@ async function saveProjects(){
   if(!token){ statusEl.textContent = 'Click "Set access key" above to save changes'; return; }
 
   try {
-    const getRes = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${FILE_PATH}?ref=${BRANCH}`, { headers:{ Authorization:`Bearer ${token}`, Accept:'application/vnd.github+json' } });
-    if(getRes.ok){ const getData = await getRes.json(); currentSha = getData.sha; }
+    // First, get the current file to retrieve the SHA
+    const getRes = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${FILE_PATH}?ref=${BRANCH}`, { 
+      headers:{ Authorization:`Bearer ${token}`, Accept:'application/vnd.github+json' }
+    });
+    
+    if(!getRes.ok) {
+      throw new Error(`Failed to fetch file (${getRes.status}): ${getRes.statusText}`);
+    }
+    
+    const getData = await getRes.json();
+    if(!getData.sha) {
+      throw new Error('No SHA returned from GitHub API');
+    }
+    currentSha = getData.sha;
 
+    // Now save the file with the correct SHA
     const putRes = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${FILE_PATH}`, {
       method:'PUT',
       headers:{ Authorization:`Bearer ${token}`, Accept:'application/vnd.github+json' },
-      body: JSON.stringify({ message:'Update SQA pipeline data', content:b64EncodeUtf8(JSON.stringify(projects,null,2)), sha:currentSha, branch:BRANCH })
+      body: JSON.stringify({ 
+        message:'Update SQA pipeline data', 
+        content: b64EncodeUtf8(JSON.stringify(projects, null, 2)), 
+        sha: currentSha, 
+        branch: BRANCH 
+      })
     });
-    if(!putRes.ok) throw new Error('GitHub save failed');
+    
+    if(!putRes.ok) {
+      const errorData = await putRes.json();
+      throw new Error(`GitHub save failed (${putRes.status}): ${errorData.message || putRes.statusText}`);
+    }
+    
     const putData = await putRes.json();
-    currentSha = putData.content.sha;
+    if(putData.content && putData.content.sha) {
+      currentSha = putData.content.sha;
+    }
+    
     statusEl.textContent = 'Saved to GitHub';
     setSyncStatus('GitHub sync active', true, Date.now());
   } catch(e){
+    console.error('Save error:', e);
     statusEl.textContent = e.message || 'Could not save';
     setSyncStatus('Sync issue', false);
   }
@@ -219,7 +246,7 @@ async function pollForRemoteUpdates(){
   const token = getToken();
   if(!token){ return; }
   try {
-    const res = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${FILE_PATH}?ref=${BRANCH}`, { headers:{ Authorization:`Bearer ${token}`, Accept:'application/vnd.github+json' } });
+    const res = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${FILE_PATH}?ref=${BRANCH}`, { headers:{ Authorization:`Bearer ${token}`, Accept:'application/vnd.git[...]
     if(!res.ok) return;
     const data = await res.json();
     if(data.sha && data.sha !== currentSha){
@@ -278,7 +305,7 @@ function render(){
             ${p.deliveryDate ? `<span class="due-tag ${dueClass}">${dueText}</span>` : '<span class="no-date">No due date</span>'}
           </div>
           <div class="card-meta-row">
-            <div class="meta-field"><label>QE Person(s)</label><div class="qe-wrap">${activeQe.length ? activeQe.map(n => `<span class="qe-tag">${escapeHtml(n)}</span>`).join('') : '<span class="qe-empty">Unassigned</span>'}</div></div>
+            <div class="meta-field"><label>QE Person(s)</label><div class="qe-wrap">${activeQe.length ? activeQe.map(n => `<span class="qe-tag">${escapeHtml(n)}</span>`).join('') : '<span class="[...]
             <div class="meta-field"><label>Dev contact</label><div class="val ${p.devName ? '' : 'faint'}">${p.devName ? escapeHtml(p.devName) : 'Not set'}</div></div>
             <div class="meta-field"><label>Iteration</label><div class="val mono ${p.iteration ? '' : 'faint'}">${p.iteration ? escapeHtml(p.iteration) : '—'}</div></div>
           </div>
@@ -287,9 +314,9 @@ function render(){
       </div>
       <div class="card-tasks-row">
         ${tasks.length === 0 && !trackBugs ? '<span class="no-tasks-note">No tracking items enabled for this project</span>' : ''}
-        ${tasks.filter(t => t.key !== 'sourceChecked').map(t => `<div class="task-row ${p[t.key] ? 'done' : ''}"><span class="mark">${p[t.key] ? '✓' : ''}</span><span>${t.label}</span></div>`).join('')}
+        ${tasks.filter(t => t.key !== 'sourceChecked').map(t => `<div class="task-row ${p[t.key] ? 'done' : ''}"><span class="mark">${p[t.key] ? '✓' : ''}</span><span>${t.label}</span></div>`).[...]
         ${trackBugs ? `<div class="bug-count-row">Bugs Count: <span class="val ${(p.bugsReported || 0) > 0 ? 'has-bugs' : ''}">${p.bugsReported || 0}</span></div>` : ''}
-        ${tasks.some(t => t.key === 'sourceChecked') ? `<div class="task-row ${p.sourceChecked ? 'done' : ''}"><span class="mark">${p.sourceChecked ? '✓' : ''}</span><span>Source code checked</span></div>` : ''}
+        ${tasks.some(t => t.key === 'sourceChecked') ? `<div class="task-row ${p.sourceChecked ? 'done' : ''}"><span class="mark">${p.sourceChecked ? '✓' : ''}</span><span>Source code checked</[...]
       </div>
     ` : `
       <div class="card-head">
@@ -298,45 +325,45 @@ function render(){
           <div class="card-name-row">
             <div class="card-name">${escapeHtml(p.name)}</div>
             <select class="status-select ${statusDef.cls}" data-status="${p.id}">${statusOptionsHtml(p.status)}</select>
-            <select class="env-select" data-env="${p.id}"><option value="Staging" ${p.environment === 'Staging' ? 'selected' : ''}>Staging</option><option value="Prod" ${p.environment === 'Prod' ? 'selected' : ''}>Prod</option></select>
+            <select class="env-select" data-env="${p.id}"><option value="Staging" ${p.environment === 'Staging' ? 'selected' : ''}>Staging</option><option value="Prod" ${p.environment === 'Prod' [...]
             ${p.deliveryDate ? `<span class="due-tag ${dueClass}">${dueText}</span>` : '<span style="color:var(--ink-faint);font-size:11.5px;">No due date</span>'}
           </div>
           <div class="card-meta-row">
-            <div class="meta-field"><label>QE Person(s)</label><div class="qe-display">${activeQe.length ? activeQe.map(n => `<span class="qe-tag">${escapeHtml(n)}</span>`).join('') : '<span class="qe-empty">Unassigned</span>'}<button class="qe-edit-btn" data-qe-toggle="${p.id}">${openQeEditorId === p.id ? 'Done' : 'Edit'}</button></div>${openQeEditorId === p.id ? `<div class="qe-checks qe-editor">${QE_NAMES.map(n => `<label><input type="checkbox" data-qe="${p.id}" value="${n}" ${activeQe.includes(n) ? 'checked' : ''}>${n}</label>`).join('')}</div>` : ''}</div>
+            <div class="meta-field"><label>QE Person(s)</label><div class="qe-display">${activeQe.length ? activeQe.map(n => `<span class="qe-tag">${escapeHtml(n)}</span>`).join('') : '<span clas[...]
             <div class="meta-field"><label>Dev contact</label><input type="text" data-dev="${p.id}" value="${escapeHtml(p.devName || '')}" placeholder="Who to contact"></div>
             <div class="meta-field iter"><label>Iteration</label><input type="text" data-iter="${p.id}" value="${escapeHtml(p.iteration || '')}" placeholder="e.g. 4"></div>
             <div class="meta-field iter"><label>Due date</label><input type="date" data-date="${p.id}" value="${p.deliveryDate || ''}"></div>
           </div>
         </div>
-        <div class="card-right"><div class="progress-ring-wrap"><div class="progress-bar-mini"><div style="width:${pct}%"></div></div><div class="progress-pct">${pct}%</div></div><button class="icon-btn" data-delete="${p.id}" title="Remove">✕</button></div>
+        <div class="card-right"><div class="progress-ring-wrap"><div class="progress-bar-mini"><div style="width:${pct}%"></div></div><div class="progress-pct">${pct}%</div></div><button class="i[...]
       </div>
       <div class="card-tasks-row">
         ${tasks.length === 0 && !trackBugs ? '<span class="no-tasks-note">No tracking items enabled for this project</span>' : ''}
-        ${tasks.filter(t => t.key !== 'sourceChecked').map(t => `<label class="task-row ${p[t.key] ? 'done' : ''}"><input type="checkbox" data-task="${t.key}" data-id="${p.id}" ${p[t.key] ? 'checked' : ''}><span>${t.label}</span></label>`).join('')}
+        ${tasks.filter(t => t.key !== 'sourceChecked').map(t => `<label class="task-row ${p[t.key] ? 'done' : ''}"><input type="checkbox" data-task="${t.key}" data-id="${p.id}" ${p[t.key] ? 'chec[...]
         ${trackBugs ? `<label class="bug-count-row">Bugs Count:<input type="number" min="0" data-bugs="${p.id}" value="${p.bugsReported || 0}"></label>` : ''}
-        ${tasks.some(t => t.key === 'sourceChecked') ? `<label class="task-row ${p.sourceChecked ? 'done' : ''}"><input type="checkbox" data-task="sourceChecked" data-id="${p.id}" ${p.sourceChecked ? 'checked' : ''}><span>Source code checked</span></label>` : ''}
+        ${tasks.some(t => t.key === 'sourceChecked') ? `<label class="task-row ${p.sourceChecked ? 'done' : ''}"><input type="checkbox" data-task="sourceChecked" data-id="${p.id}" ${p.sourceCheck[...]
         <div class="card-footer-row"><button class="qe-edit-btn" data-task-toggle="${p.id}">${openTaskEditorId === p.id ? 'Done' : 'Edit tracking items'}</button></div>
       </div>
-      ${openTaskEditorId === p.id ? `<div class="checkbox-group qe-editor" style="margin-top:10px;padding-top:10px;border-top:1px solid var(--border);"><label><input type="checkbox" data-track="trackCreated" data-id="${p.id}" ${p.trackCreated !== false ? 'checked' : ''}> Test cases created applies</label><label><input type="checkbox" data-track="trackExecuted" data-id="${p.id}" ${p.trackExecuted !== false ? 'checked' : ''}> Test cases executed applies</label><label><input type="checkbox" data-track="trackBugs" data-id="${p.id}" ${p.trackBugs !== false ? 'checked' : ''}> Track Bugs Count applies</label><label><input type="checkbox" data-track="trackSource" data-id="${p.id}" ${p.trackSource !== false ? 'checked' : ''}> Source code checked applies</label></div>` : ''}
+      ${openTaskEditorId === p.id ? `<div class="checkbox-group qe-editor" style="margin-top:10px;padding-top:10px;border-top:1px solid var(--border);"><label><input type="checkbox" data-track="t[...]
     `;
     queueEl.appendChild(card);
   });
 
-  queueEl.querySelectorAll('[data-task-toggle]').forEach(el => { el.addEventListener('click', () => { const id = el.getAttribute('data-task-toggle'); openTaskEditorId = openTaskEditorId === id ? null : id; render(); }); });
-  queueEl.querySelectorAll('[data-track]').forEach(el => { el.addEventListener('change', () => { const proj = projects.find(p => p.id === el.getAttribute('data-id')); proj[el.getAttribute('data-track')] = el.checked; render(); saveProjects(); }); });
-  queueEl.querySelectorAll('[data-status]').forEach(el => { el.addEventListener('change', () => { const proj = projects.find(p => p.id === el.getAttribute('data-status')); proj.status = el.value; render(); saveProjects(); }); });
-  queueEl.querySelectorAll('[data-env]').forEach(el => { el.addEventListener('change', () => { const proj = projects.find(p => p.id === el.getAttribute('data-env')); proj.environment = el.value; saveProjects(); }); });
-  queueEl.querySelectorAll('[data-task]').forEach(el => { el.addEventListener('change', () => { const proj = projects.find(p => p.id === el.getAttribute('data-id')); proj[el.getAttribute('data-task')] = el.checked; render(); saveProjects(); }); });
-  queueEl.querySelectorAll('[data-bugs]').forEach(el => { el.addEventListener('change', () => { const proj = projects.find(p => p.id === el.getAttribute('data-bugs')); proj.bugsReported = parseInt(el.value) || 0; render(); saveProjects(); }); });
-  queueEl.querySelectorAll('[data-qe-toggle]').forEach(el => { el.addEventListener('click', () => { const id = el.getAttribute('data-qe-toggle'); openQeEditorId = openQeEditorId === id ? null : id; render(); }); });
-  queueEl.querySelectorAll('[data-qe]').forEach(el => { el.addEventListener('change', () => { const proj = projects.find(p => p.id === el.getAttribute('data-qe')); const editor = el.closest('.qe-editor'); const checked = Array.from(editor.querySelectorAll('[data-qe]:checked')).map(c => c.value); proj.qeNames = checked.join(', '); render(); saveProjects(); }); });
-  queueEl.querySelectorAll('[data-dev]').forEach(el => { el.addEventListener('change', () => { const proj = projects.find(p => p.id === el.getAttribute('data-dev')); proj.devName = el.value.trim(); saveProjects(); }); });
-  queueEl.querySelectorAll('[data-iter]').forEach(el => { el.addEventListener('change', () => { const proj = projects.find(p => p.id === el.getAttribute('data-iter')); proj.iteration = el.value.trim(); saveProjects(); }); });
-  queueEl.querySelectorAll('[data-date]').forEach(el => { el.addEventListener('change', () => { const proj = projects.find(p => p.id === el.getAttribute('data-date')); proj.deliveryDate = el.value; render(); saveProjects(); }); });
-  queueEl.querySelectorAll('[data-delete]').forEach(el => { el.addEventListener('click', () => { projects = projects.filter(p => p.id !== el.getAttribute('data-delete')); render(); saveProjects(); }); });
+  queueEl.querySelectorAll('[data-task-toggle]').forEach(el => { el.addEventListener('click', () => { const id = el.getAttribute('data-task-toggle'); openTaskEditorId = openTaskEditorId === id ? [...]
+  queueEl.querySelectorAll('[data-track]').forEach(el => { el.addEventListener('change', () => { const proj = projects.find(p => p.id === el.getAttribute('data-id')); proj[el.getAttribute('data-t[...]
+  queueEl.querySelectorAll('[data-status]').forEach(el => { el.addEventListener('change', () => { const proj = projects.find(p => p.id === el.getAttribute('data-status')); proj.status = el.value;[...]
+  queueEl.querySelectorAll('[data-env]').forEach(el => { el.addEventListener('change', () => { const proj = projects.find(p => p.id === el.getAttribute('data-env')); proj.environment = el.value; [...]
+  queueEl.querySelectorAll('[data-task]').forEach(el => { el.addEventListener('change', () => { const proj = projects.find(p => p.id === el.getAttribute('data-id')); proj[el.getAttribute('data-ta[...]
+  queueEl.querySelectorAll('[data-bugs]').forEach(el => { el.addEventListener('change', () => { const proj = projects.find(p => p.id === el.getAttribute('data-bugs')); proj.bugsReported = parseIn[...]
+  queueEl.querySelectorAll('[data-qe-toggle]').forEach(el => { el.addEventListener('click', () => { const id = el.getAttribute('data-qe-toggle'); openQeEditorId = openQeEditorId === id ? null : i[...]
+  queueEl.querySelectorAll('[data-qe]').forEach(el => { el.addEventListener('change', () => { const proj = projects.find(p => p.id === el.getAttribute('data-qe')); const editor = el.closest('.qe-[...]
+  queueEl.querySelectorAll('[data-dev]').forEach(el => { el.addEventListener('change', () => { const proj = projects.find(p => p.id === el.getAttribute('data-dev')); proj.devName = el.value.trim()[...]
+  queueEl.querySelectorAll('[data-iter]').forEach(el => { el.addEventListener('change', () => { const proj = projects.find(p => p.id === el.getAttribute('data-iter')); proj.iteration = el.value.t[...]
+  queueEl.querySelectorAll('[data-date]').forEach(el => { el.addEventListener('change', () => { const proj = projects.find(p => p.id === el.getAttribute('data-date')); proj.deliveryDate = el.valu[...]
+  queueEl.querySelectorAll('[data-delete]').forEach(el => { el.addEventListener('click', () => { projects = projects.filter(p => p.id !== el.getAttribute('data-delete')); render(); saveProjects()[...]
 }
 
-function buildQeCheckboxGroup(){ const group = document.getElementById('fQeGroup'); group.innerHTML = QE_NAMES.map(n => `<label><input type="checkbox" class="fQeOption" value="${n}"> ${n}</label>`).join(''); }
+function buildQeCheckboxGroup(){ const group = document.getElementById('fQeGroup'); group.innerHTML = QE_NAMES.map(n => `<label><input type="checkbox" class="fQeOption" value="${n}"> ${n}</label>[...]
 
 function openOverlay(){ document.getElementById('overlay').classList.add('open'); }
 function closeOverlay(){ document.getElementById('overlay').classList.remove('open'); }
@@ -387,7 +414,7 @@ document.getElementById('saveBtn').addEventListener('click', () => {
 
 document.getElementById('exportBtn').addEventListener('click', () => {
   const rows = [
-    ['Position','Project Name','Status','Environment','QE Person(s)','Dev Contact','Iteration','Due Date','Test Cases Created','Test Cases Executed','Source Code Checked','Bugs Count','Progress %'],
+    ['Position','Project Name','Status','Environment','QE Person(s)','Dev Contact','Iteration','Due Date','Test Cases Created','Test Cases Executed','Source Code Checked','Bugs Count','Progress %[...]
     ...sortedByDueDate(projects).map((p, idx) => [
       idx + 1,
       p.name || '',
@@ -416,7 +443,7 @@ document.getElementById('exportImgBtn').addEventListener('click', () => {
   canvas.width = W; canvas.height = H;
   ctx.fillStyle = '#EDF0F5'; ctx.fillRect(0,0,W,H);
   ctx.fillStyle = '#1B2A56'; ctx.font = '800 26px Manrope, Inter, sans-serif'; ctx.fillText('SQA Pipeline', 32, 48);
-  ctx.fillStyle = '#5B6472'; ctx.font = '400 13px Inter, sans-serif'; ctx.fillText('Snapshot exported ' + new Date().toLocaleDateString('en-US',{ weekday:'long', year:'numeric', month:'long', day:'numeric'}), 32, 72);
+  ctx.fillStyle = '#5B6472'; ctx.font = '400 13px Inter, sans-serif'; ctx.fillText('Snapshot exported ' + new Date().toLocaleDateString('en-US',{ weekday:'long', year:'numeric', month:'long', day[...]
   let y = 96;
   sortedByDueDate(projects).forEach((p, idx) => {
     const status = STATUS_DEFS[p.status] || STATUS_DEFS['not-started'];
