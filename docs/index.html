@@ -13,10 +13,7 @@
     --danger-soft:#FBE8E9; --blocked:#7C4DE0; --blocked-soft:#EFE9FC; --env:#0E7490; --env-soft:#E1F1F4;
     --mono:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace; --sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; --display:'Manrope',var(--sans);
   }
-  *{box-sizing:border-box} html{background:var(--navy)} body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased;padding:0 0 80px} .brand-stri[...]
-.queue{display:flex;flex-direction:column;gap:12px}.card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--border);border-radius:10px;padding:18px 18px 16px;box-[...]
-button.secondary{background:var(--surface);color:var(--navy);border:1px solid var(--border);padding:9px 16px;border-radius:8px;font-size:13.5px;font-weight:600;cursor:pointer;transition:all .15s e[...]
-@media (max-width:640px){.stats{flex-wrap:wrap}.stat{flex:1 1 33%;border-bottom:1px solid var(--border)}.stat .num{font-size:19px}.card-head{flex-wrap:wrap}.card-right{flex-direction:row;align-ite[...]
+  *{box-sizing:border-box} html{background:var(--navy)} body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased;padding:0 0 80px} .brand-strip{height:3px;background:linear-gradient(90deg,#3457D5,#7C4DE0,#D7373F)} .wrap{max-width:1200px;margin:0 auto;padding:0 16px} header.page{display:flex;justify-content:space-between;align-items:center;padding:32px 0;border-bottom:1px solid var(--border);margin-bottom:24px;gap:24px;flex-wrap:wrap} header.page h1{margin:0;font-size:32px;font-weight:800;font-family:var(--display)} header.page .subtitle{margin:6px 0 0;font-size:14px;color:var(--ink-soft)} .view-badge{background:var(--accent-soft);color:var(--accent-dark);padding:10px 16px;border-radius:8px;font-size:12px;font-weight:600;margin-bottom:16px;text-align:center} .sync-status{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--ink-soft);margin-bottom:16px;padding:8px 12px;background:var(--navy-soft);border-radius:8px} .sync-dot{width:8px;height:8px;border-radius:50%;background:var(--ink-faint);transition:all .2s ease} .sync-dot.live{background:var(--done);box-shadow:0 0 8px var(--done)} .sync-divider{color:var(--border)} .sync-status button{margin-left:auto} .stats{display:flex;gap:16px;margin-bottom:32px} .stat{background:var(--surface);border:1px solid var(--border);padding:16px;border-radius:10px;flex:1;min-width:120px} .stat .num{font-size:24px;font-weight:800;color:var(--ink);margin:0} .stat .label{font-size:12px;color:var(--ink-soft);margin:6px 0 0} .queue{display:flex;flex-direction:column;gap:12px}.card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--border);border-radius:10px;padding:18px 18px 16px;box-shadow:0 1px 3px rgba(0,0,0,0.05)} .card-head{display:flex;gap:16px;align-items:flex-start;margin-bottom:12px} .pos{font-size:12px;font-weight:700;color:var(--ink-faint);min-width:24px;text-align:center;padding-top:2px} .card-title-block{flex:1} .card-name-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:10px} .card-name{font-size:15px;font-weight:600;color:var(--ink)} .pill{font-size:11px;font-weight:600;padding:4px 8px;border-radius:6px;white-space:nowrap} .status-not-started{background:#E9EEF8;color:#5B6472} .status-in-progress{background:#FBF0DC;color:#B7791F} .status-blocked{background:#EFE9FC;color:#7C4DE0} .status-ready{background:#E4F6ED;color:#178A50} .status-delivered{background:#DFF3F0;color:#0D7268} .env-tag{font-size:11px;padding:3px 8px;background:var(--env-soft);color:var(--env);border-radius:6px;white-space:nowrap} .due-tag{font-size:11px;padding:3px 8px;background:var(--pending-soft);color:var(--pending);border-radius:6px} .due-tag.overdue{background:var(--danger-soft);color:var(--danger)} .due-tag.ready{background:var(--done-soft);color:var(--done)} .no-date{font-size:11px;color:var(--ink-faint)} .card-meta-row{display:flex;gap:16px;flex-wrap:wrap} .meta-field{flex:0 0 auto} .meta-field label{font-size:11px;font-weight:600;color:var(--ink-faint);display:block;margin-bottom:3px} .meta-field .val{font-size:13px;color:var(--ink)} .meta-field .val.faint{color:var(--ink-faint)} .meta-field .mono{font-family:var(--mono)} .meta-field input,.meta-field select{font-size:13px;padding:6px 8px;border:1px solid var(--border);border-radius:6px;font-family:inherit} .meta-field input:focus,.meta-field select:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 2px var(--accent-soft)} .qe-tag{display:inline-block;font-size:12px;padding:3px 8px;background:var(--navy-soft);color:var(--navy);border-radius:6px;margin:2px} .qe-wrap{display:flex;flex-wrap:wrap;gap:4px} .card-right{display:flex;flex-direction:column;align-items:center;gap:8px;min-width:80px} .progress-ring-wrap{display:flex;flex-direction:column;align-items:center} .progress-bar-mini{width:60px;height:4px;background:var(--border);border-radius:2px;overflow:hidden;margin-bottom:3px} .progress-bar-mini>div{height:100%;background:var(--accent);border-radius:2px;transition:width .3s ease} .progress-pct{font-size:13px;font-weight:600;color:var(--ink)} .card-tasks-row{display:flex;flex-direction:column;gap:6px;padding-top:8px;border-top:1px solid var(--border)} .task-row{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--ink-soft);cursor:pointer;user-select:none} .task-row input{cursor:pointer} .task-row.done{color:var(--done)} .task-row.done .mark{color:var(--done);font-weight:700} .task-row .mark{width:16px;text-align:center;color:var(--border);font-weight:600} .bug-count-row{display:flex;align-items:center;gap:8px;font-size:13px} .bug-count-row input{width:60px;padding:4px 6px;font-size:12px} .bug-count-row .val.has-bugs{color:var(--danger);font-weight:600} .status-select,.env-select{font-size:12px;padding:4px 8px;border:1px solid var(--border);border-radius:6px;background:var(--surface);cursor:pointer} .no-tasks-note{font-size:12px;color:var(--ink-faint);font-style:italic} .card-footer-row{display:flex;gap:8px;padding-top:4px} .qe-edit-btn{font-size:11px;padding:4px 8px;background:var(--navy-soft);color:var(--navy);border:none;border-radius:6px;cursor:pointer;font-weight:600;transition:all .15s} .qe-edit-btn:hover{background:var(--accent-soft);color:var(--accent)} .qe-editor{background:var(--navy-soft);padding:8px;border-radius:6px} .qe-editor label{display:block;font-size:12px;margin:4px 0;cursor:pointer} .qe-editor input{margin-right:4px;cursor:pointer} .empty{text-align:center;padding:60px 20px;color:var(--ink-faint)} .empty .big{font-size:48px;margin-bottom:16px} button.primary{background:var(--accent);color:white;border:none;padding:10px 20px;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;transition:all .15s ease} button.primary:hover{background:var(--accent-dark)} button.secondary{background:var(--surface);color:var(--navy);border:1px solid var(--border);padding:9px 16px;border-radius:8px;font-size:13.5px;font-weight:600;cursor:pointer;transition:all .15s ease} button.secondary:hover{background:var(--navy-soft)} .overlay{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.3);z-index:1000;align-items:center;justify-content:center} .overlay.open{display:flex} .modal{background:var(--surface);border-radius:12px;padding:32px;max-width:500px;width:90%;max-height:90vh;overflow-y:auto;box-shadow:0 10px 40px rgba(0,0,0,0.2)} .modal h2{margin:0 0 24px;font-size:20px;font-weight:700} .field{margin-bottom:16px} .field label{display:block;font-size:13px;font-weight:600;color:var(--ink);margin-bottom:6px} .field input,.field select{width:100%;padding:8px 12px;font-size:13px;border:1px solid var(--border);border-radius:6px;font-family:inherit} .field input:focus,.field select:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 2px var(--accent-soft)} .field-row{display:flex;gap:16px} .field-row .field{flex:1} .hint{font-size:11px;color:var(--ink-faint);margin-top:4px} .checkbox-group{display:flex;flex-direction:column;gap:8px} .checkbox-group label{display:flex;align-items:center;gap:6px;font-size:13px;cursor:pointer;user-select:none} .checkbox-group input{cursor:pointer} .modal-actions{display:flex;gap:8px;justify-content:flex-end;margin-top:24px} .btn-cancel{background:var(--surface);color:var(--ink);border:1px solid var(--border);padding:10px 20px;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer} .btn-cancel:hover{background:var(--navy-soft)} .status-line{font-size:12px;color:var(--ink-faint);text-align:center;padding:8px;margin-top:16px} @media (max-width:640px){.stats{flex-wrap:wrap}.stat{flex:1 1 33%;border-bottom:1px solid var(--border)}.stat .num{font-size:19px}.card-head{flex-wrap:wrap}.card-right{flex-direction:row;align-items:center;margin-top:8px} header.page{padding:16px 0}.card-meta-row{flex-direction:column;gap:8px}}
 </style>
 </head>
 <body>
@@ -67,7 +64,7 @@ button.secondary{background:var(--surface);color:var(--navy);border:1px solid va
       <div class="field"><label for="fEnv">Environment</label><select id="fEnv"><option value="Staging" selected>Staging</option><option value="Prod">Prod</option></select></div>
     </div>
     <div class="field"><label for="fDate">Delivery / due date</label><input id="fDate" type="date"><div class="hint">Projects are automatically ordered by this date, soonest first</div></div>
-    <div class="field"><label for="fStatus">Status</label><select id="fStatus"><option value="not-started">Not started</option><option value="in-progress" selected>In progress</option><option valu[...]
+    <div class="field"><label for="fStatus">Status</label><select id="fStatus"><option value="not-started">Not started</option><option value="in-progress" selected>In progress</option><option value="blocked">Blocked</option><option value="ready">Ready for delivery</option><option value="delivered">Delivered</option></select></div>
     <div class="field">
       <label>Which tracking items apply to this project?</label>
       <div class="checkbox-group">
@@ -110,15 +107,15 @@ const STATUS_DEFS = {
 };
 
 function getToken(){ return localStorage.getItem(TOKEN_KEY) || ''; }
-function setToken(){ const current = getToken(); const value = prompt('Paste your GitHub access token (kept only in this browser):', current); if(value !== null){ localStorage.setItem(TOKEN_KEY, [...]
+function setToken(){ const current = getToken(); const value = prompt('Paste your GitHub access token (kept only in this browser):', current); if(value !== null){ localStorage.setItem(TOKEN_KEY, value); loadProjects(); } }
 function b64EncodeUtf8(str){ return btoa(unescape(encodeURIComponent(str))); }
 function b64DecodeUtf8(str){ return decodeURIComponent(escape(atob(str))); }
 function uid(){ return Date.now().toString(36) + Math.random().toString(36).slice(2,7); }
 function fmtDate(d){ if(!d) return null; const dt = new Date(d + 'T00:00:00'); return dt.toLocaleDateString('en-US',{ month:'short', day:'numeric' }); }
 function daysUntil(d){ if(!d) return null; const today = new Date(); today.setHours(0,0,0,0); const target = new Date(d + 'T00:00:00'); return Math.round((target - today)/86400000); }
 function activeTasks(p){ return TASK_DEFS.filter(t => p[t.enabledKey] !== false); }
-function progressOf(p){ const tasks = activeTasks(p); if(tasks.length === 0) return p.status === 'ready' ? 100 : 0; const done = tasks.filter(t => p[t.key]).length; return Math.round((done / task[...]
-function sortedByDueDate(list){ return [...list].sort((a,b) => { if(!a.deliveryDate && !b.deliveryDate) return 0; if(!a.deliveryDate) return 1; if(!b.deliveryDate) return -1; return new Date(a.de[...]
+function progressOf(p){ const tasks = activeTasks(p); if(tasks.length === 0) return p.status === 'ready' ? 100 : 0; const done = tasks.filter(t => p[t.key]).length; return Math.round((done / tasks.length) * 100); }
+function sortedByDueDate(list){ return [...list].sort((a,b) => { if(!a.deliveryDate && !b.deliveryDate) return 0; if(!a.deliveryDate) return 1; if(!b.deliveryDate) return -1; return new Date(a.deliveryDate) - new Date(b.deliveryDate); }); }
 function statusOptionsHtml(current){ return Object.entries(STATUS_DEFS).map(([key,def]) => `<option value="${key}" ${key===current?'selected':''}>${def.label}</option>`).join(''); }
 function qeListOf(p){ return (p.qeNames || '').split(',').map(s => s.trim()).filter(Boolean); }
 function escapeHtml(str){ const div = document.createElement('div'); div.textContent = String(str ?? ''); return div.innerHTML; }
@@ -169,7 +166,7 @@ async function loadProjects(){
         render();
         return;
       }
-      const res = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${FILE_PATH}?ref=${BRANCH}`, { headers:{ Authorization:`Bearer ${token}`, Accept:'application/vnd.g[...]
+      const res = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${FILE_PATH}?ref=${BRANCH}`, { headers:{ Authorization:`Bearer ${token}`, Accept:'application/vnd.github+json' } });
       if(!res.ok) throw new Error('GitHub read failed');
       const data = await res.json();
       currentSha = data.sha;
@@ -246,7 +243,7 @@ async function pollForRemoteUpdates(){
   const token = getToken();
   if(!token){ return; }
   try {
-    const res = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${FILE_PATH}?ref=${BRANCH}`, { headers:{ Authorization:`Bearer ${token}`, Accept:'application/vnd.git[...]
+    const res = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${FILE_PATH}?ref=${BRANCH}`, { headers:{ Authorization:`Bearer ${token}`, Accept:'application/vnd.github+json' } });
     if(!res.ok) return;
     const data = await res.json();
     if(data.sha && data.sha !== currentSha){
@@ -305,7 +302,7 @@ function render(){
             ${p.deliveryDate ? `<span class="due-tag ${dueClass}">${dueText}</span>` : '<span class="no-date">No due date</span>'}
           </div>
           <div class="card-meta-row">
-            <div class="meta-field"><label>QE Person(s)</label><div class="qe-wrap">${activeQe.length ? activeQe.map(n => `<span class="qe-tag">${escapeHtml(n)}</span>`).join('') : '<span class="[...]
+            <div class="meta-field"><label>QE Person(s)</label><div class="qe-wrap">${activeQe.length ? activeQe.map(n => `<span class="qe-tag">${escapeHtml(n)}</span>`).join('') : '<span class="ink-faint">Unassigned</span>'}</div></div>
             <div class="meta-field"><label>Dev contact</label><div class="val ${p.devName ? '' : 'faint'}">${p.devName ? escapeHtml(p.devName) : 'Not set'}</div></div>
             <div class="meta-field"><label>Iteration</label><div class="val mono ${p.iteration ? '' : 'faint'}">${p.iteration ? escapeHtml(p.iteration) : '—'}</div></div>
           </div>
@@ -314,9 +311,9 @@ function render(){
       </div>
       <div class="card-tasks-row">
         ${tasks.length === 0 && !trackBugs ? '<span class="no-tasks-note">No tracking items enabled for this project</span>' : ''}
-        ${tasks.filter(t => t.key !== 'sourceChecked').map(t => `<div class="task-row ${p[t.key] ? 'done' : ''}"><span class="mark">${p[t.key] ? '✓' : ''}</span><span>${t.label}</span></div>`).[...]
+        ${tasks.filter(t => t.key !== 'sourceChecked').map(t => `<div class="task-row ${p[t.key] ? 'done' : ''}"><span class="mark">${p[t.key] ? '✓' : ''}</span><span>${t.label}</span></div>`).join('')}
         ${trackBugs ? `<div class="bug-count-row">Bugs Count: <span class="val ${(p.bugsReported || 0) > 0 ? 'has-bugs' : ''}">${p.bugsReported || 0}</span></div>` : ''}
-        ${tasks.some(t => t.key === 'sourceChecked') ? `<div class="task-row ${p.sourceChecked ? 'done' : ''}"><span class="mark">${p.sourceChecked ? '✓' : ''}</span><span>Source code checked</[...]
+        ${tasks.some(t => t.key === 'sourceChecked') ? `<div class="task-row ${p.sourceChecked ? 'done' : ''}"><span class="mark">${p.sourceChecked ? '✓' : ''}</span><span>Source code checked</span></div>` : ''}
       </div>
     ` : `
       <div class="card-head">
@@ -325,45 +322,45 @@ function render(){
           <div class="card-name-row">
             <div class="card-name">${escapeHtml(p.name)}</div>
             <select class="status-select ${statusDef.cls}" data-status="${p.id}">${statusOptionsHtml(p.status)}</select>
-            <select class="env-select" data-env="${p.id}"><option value="Staging" ${p.environment === 'Staging' ? 'selected' : ''}>Staging</option><option value="Prod" ${p.environment === 'Prod' [...]
+            <select class="env-select" data-env="${p.id}"><option value="Staging" ${p.environment === 'Staging' ? 'selected' : ''}>Staging</option><option value="Prod" ${p.environment === 'Prod' ? 'selected' : ''}>Prod</option></select>
             ${p.deliveryDate ? `<span class="due-tag ${dueClass}">${dueText}</span>` : '<span style="color:var(--ink-faint);font-size:11.5px;">No due date</span>'}
           </div>
           <div class="card-meta-row">
-            <div class="meta-field"><label>QE Person(s)</label><div class="qe-display">${activeQe.length ? activeQe.map(n => `<span class="qe-tag">${escapeHtml(n)}</span>`).join('') : '<span clas[...]
+            <div class="meta-field"><label>QE Person(s)</label><div class="qe-display">${activeQe.length ? activeQe.map(n => `<span class="qe-tag">${escapeHtml(n)}</span>`).join('') : '<span class="ink-faint">Unassigned</span>'}</div></div>
             <div class="meta-field"><label>Dev contact</label><input type="text" data-dev="${p.id}" value="${escapeHtml(p.devName || '')}" placeholder="Who to contact"></div>
             <div class="meta-field iter"><label>Iteration</label><input type="text" data-iter="${p.id}" value="${escapeHtml(p.iteration || '')}" placeholder="e.g. 4"></div>
             <div class="meta-field iter"><label>Due date</label><input type="date" data-date="${p.id}" value="${p.deliveryDate || ''}"></div>
           </div>
         </div>
-        <div class="card-right"><div class="progress-ring-wrap"><div class="progress-bar-mini"><div style="width:${pct}%"></div></div><div class="progress-pct">${pct}%</div></div><button class="i[...]
+        <div class="card-right"><div class="progress-ring-wrap"><div class="progress-bar-mini"><div style="width:${pct}%"></div></div><div class="progress-pct">${pct}%</div></div><button class="i-btn" data-qe-toggle="${p.id}" title="Edit QE team">👥</button></div>
       </div>
       <div class="card-tasks-row">
         ${tasks.length === 0 && !trackBugs ? '<span class="no-tasks-note">No tracking items enabled for this project</span>' : ''}
-        ${tasks.filter(t => t.key !== 'sourceChecked').map(t => `<label class="task-row ${p[t.key] ? 'done' : ''}"><input type="checkbox" data-task="${t.key}" data-id="${p.id}" ${p[t.key] ? 'chec[...]
+        ${tasks.filter(t => t.key !== 'sourceChecked').map(t => `<label class="task-row ${p[t.key] ? 'done' : ''}"><input type="checkbox" data-task="${t.key}" data-id="${p.id}" ${p[t.key] ? 'checked' : ''}> ${t.label}</label>`).join('')}
         ${trackBugs ? `<label class="bug-count-row">Bugs Count:<input type="number" min="0" data-bugs="${p.id}" value="${p.bugsReported || 0}"></label>` : ''}
-        ${tasks.some(t => t.key === 'sourceChecked') ? `<label class="task-row ${p.sourceChecked ? 'done' : ''}"><input type="checkbox" data-task="sourceChecked" data-id="${p.id}" ${p.sourceCheck[...]
-        <div class="card-footer-row"><button class="qe-edit-btn" data-task-toggle="${p.id}">${openTaskEditorId === p.id ? 'Done' : 'Edit tracking items'}</button></div>
+        ${tasks.some(t => t.key === 'sourceChecked') ? `<label class="task-row ${p.sourceChecked ? 'done' : ''}"><input type="checkbox" data-task="sourceChecked" data-id="${p.id}" ${p.sourceChecked ? 'checked' : ''}> Source code checked</label>` : ''}
+        <div class="card-footer-row"><button class="qe-edit-btn" data-task-toggle="${p.id}">${openTaskEditorId === p.id ? 'Done' : 'Edit tracking items'}</button><button class="qe-edit-btn" data-delete="${p.id}">Delete</button></div>
       </div>
-      ${openTaskEditorId === p.id ? `<div class="checkbox-group qe-editor" style="margin-top:10px;padding-top:10px;border-top:1px solid var(--border);"><label><input type="checkbox" data-track="t[...]
+      ${openTaskEditorId === p.id ? `<div class="checkbox-group qe-editor" style="margin-top:10px;padding-top:10px;border-top:1px solid var(--border);"><label><input type="checkbox" data-track="trackCreated" data-id="${p.id}" ${p.trackCreated !== false ? 'checked' : ''}> Test cases created</label><label><input type="checkbox" data-track="trackExecuted" data-id="${p.id}" ${p.trackExecuted !== false ? 'checked' : ''}> Test cases executed</label><label><input type="checkbox" data-track="trackBugs" data-id="${p.id}" ${p.trackBugs !== false ? 'checked' : ''}> Track Bugs Count</label><label><input type="checkbox" data-track="trackSource" data-id="${p.id}" ${p.trackSource !== false ? 'checked' : ''}> Source code checked</label></div>` : ''}
     `;
     queueEl.appendChild(card);
   });
 
-  queueEl.querySelectorAll('[data-task-toggle]').forEach(el => { el.addEventListener('click', () => { const id = el.getAttribute('data-task-toggle'); openTaskEditorId = openTaskEditorId === id ? [...]
-  queueEl.querySelectorAll('[data-track]').forEach(el => { el.addEventListener('change', () => { const proj = projects.find(p => p.id === el.getAttribute('data-id')); proj[el.getAttribute('data-t[...]
-  queueEl.querySelectorAll('[data-status]').forEach(el => { el.addEventListener('change', () => { const proj = projects.find(p => p.id === el.getAttribute('data-status')); proj.status = el.value;[...]
-  queueEl.querySelectorAll('[data-env]').forEach(el => { el.addEventListener('change', () => { const proj = projects.find(p => p.id === el.getAttribute('data-env')); proj.environment = el.value; [...]
-  queueEl.querySelectorAll('[data-task]').forEach(el => { el.addEventListener('change', () => { const proj = projects.find(p => p.id === el.getAttribute('data-id')); proj[el.getAttribute('data-ta[...]
-  queueEl.querySelectorAll('[data-bugs]').forEach(el => { el.addEventListener('change', () => { const proj = projects.find(p => p.id === el.getAttribute('data-bugs')); proj.bugsReported = parseIn[...]
-  queueEl.querySelectorAll('[data-qe-toggle]').forEach(el => { el.addEventListener('click', () => { const id = el.getAttribute('data-qe-toggle'); openQeEditorId = openQeEditorId === id ? null : i[...]
-  queueEl.querySelectorAll('[data-qe]').forEach(el => { el.addEventListener('change', () => { const proj = projects.find(p => p.id === el.getAttribute('data-qe')); const editor = el.closest('.qe-[...]
-  queueEl.querySelectorAll('[data-dev]').forEach(el => { el.addEventListener('change', () => { const proj = projects.find(p => p.id === el.getAttribute('data-dev')); proj.devName = el.value.trim()[...]
-  queueEl.querySelectorAll('[data-iter]').forEach(el => { el.addEventListener('change', () => { const proj = projects.find(p => p.id === el.getAttribute('data-iter')); proj.iteration = el.value.t[...]
-  queueEl.querySelectorAll('[data-date]').forEach(el => { el.addEventListener('change', () => { const proj = projects.find(p => p.id === el.getAttribute('data-date')); proj.deliveryDate = el.valu[...]
-  queueEl.querySelectorAll('[data-delete]').forEach(el => { el.addEventListener('click', () => { projects = projects.filter(p => p.id !== el.getAttribute('data-delete')); render(); saveProjects()[...]
+  queueEl.querySelectorAll('[data-task-toggle]').forEach(el => { el.addEventListener('click', () => { const id = el.getAttribute('data-task-toggle'); openTaskEditorId = openTaskEditorId === id ? null : id; render(); }); });
+  queueEl.querySelectorAll('[data-track]').forEach(el => { el.addEventListener('change', () => { const proj = projects.find(p => p.id === el.getAttribute('data-id')); proj[el.getAttribute('data-track')] = el.checked; render(); saveProjects(); }); });
+  queueEl.querySelectorAll('[data-status]').forEach(el => { el.addEventListener('change', () => { const proj = projects.find(p => p.id === el.getAttribute('data-status')); proj.status = el.value; render(); saveProjects(); }); });
+  queueEl.querySelectorAll('[data-env]').forEach(el => { el.addEventListener('change', () => { const proj = projects.find(p => p.id === el.getAttribute('data-env')); proj.environment = el.value; render(); saveProjects(); }); });
+  queueEl.querySelectorAll('[data-task]').forEach(el => { el.addEventListener('change', () => { const proj = projects.find(p => p.id === el.getAttribute('data-id')); proj[el.getAttribute('data-task')] = el.checked; render(); saveProjects(); }); });
+  queueEl.querySelectorAll('[data-bugs]').forEach(el => { el.addEventListener('change', () => { const proj = projects.find(p => p.id === el.getAttribute('data-bugs')); proj.bugsReported = parseInt(el.value) || 0; render(); saveProjects(); }); });
+  queueEl.querySelectorAll('[data-qe-toggle]').forEach(el => { el.addEventListener('click', () => { const id = el.getAttribute('data-qe-toggle'); openQeEditorId = openQeEditorId === id ? null : id; render(); }); });
+  queueEl.querySelectorAll('[data-qe]').forEach(el => { el.addEventListener('change', () => { const proj = projects.find(p => p.id === el.getAttribute('data-qe')); const editor = el.closest('.qe-editor'); const selected = Array.from(editor.querySelectorAll('input:checked')).map(i => i.value).join(', '); proj.qeNames = selected; render(); saveProjects(); }); });
+  queueEl.querySelectorAll('[data-dev]').forEach(el => { el.addEventListener('change', () => { const proj = projects.find(p => p.id === el.getAttribute('data-dev')); proj.devName = el.value.trim(); saveProjects(); }); });
+  queueEl.querySelectorAll('[data-iter]').forEach(el => { el.addEventListener('change', () => { const proj = projects.find(p => p.id === el.getAttribute('data-iter')); proj.iteration = el.value.trim(); saveProjects(); }); });
+  queueEl.querySelectorAll('[data-date]').forEach(el => { el.addEventListener('change', () => { const proj = projects.find(p => p.id === el.getAttribute('data-date')); proj.deliveryDate = el.value; render(); saveProjects(); }); });
+  queueEl.querySelectorAll('[data-delete]').forEach(el => { el.addEventListener('click', () => { projects = projects.filter(p => p.id !== el.getAttribute('data-delete')); render(); saveProjects(); }); });
 }
 
-function buildQeCheckboxGroup(){ const group = document.getElementById('fQeGroup'); group.innerHTML = QE_NAMES.map(n => `<label><input type="checkbox" class="fQeOption" value="${n}"> ${n}</label>[...]
+function buildQeCheckboxGroup(){ const group = document.getElementById('fQeGroup'); group.innerHTML = QE_NAMES.map(n => `<label><input type="checkbox" class="fQeOption" value="${n}"> ${n}</label>`).join(''); }
 
 function openOverlay(){ document.getElementById('overlay').classList.add('open'); }
 function closeOverlay(){ document.getElementById('overlay').classList.remove('open'); }
@@ -414,7 +411,7 @@ document.getElementById('saveBtn').addEventListener('click', () => {
 
 document.getElementById('exportBtn').addEventListener('click', () => {
   const rows = [
-    ['Position','Project Name','Status','Environment','QE Person(s)','Dev Contact','Iteration','Due Date','Test Cases Created','Test Cases Executed','Source Code Checked','Bugs Count','Progress %[...]
+    ['Position','Project Name','Status','Environment','QE Person(s)','Dev Contact','Iteration','Due Date','Test Cases Created','Test Cases Executed','Source Code Checked','Bugs Count','Progress %'],
     ...sortedByDueDate(projects).map((p, idx) => [
       idx + 1,
       p.name || '',
@@ -443,7 +440,7 @@ document.getElementById('exportImgBtn').addEventListener('click', () => {
   canvas.width = W; canvas.height = H;
   ctx.fillStyle = '#EDF0F5'; ctx.fillRect(0,0,W,H);
   ctx.fillStyle = '#1B2A56'; ctx.font = '800 26px Manrope, Inter, sans-serif'; ctx.fillText('SQA Pipeline', 32, 48);
-  ctx.fillStyle = '#5B6472'; ctx.font = '400 13px Inter, sans-serif'; ctx.fillText('Snapshot exported ' + new Date().toLocaleDateString('en-US',{ weekday:'long', year:'numeric', month:'long', day[...]
+  ctx.fillStyle = '#5B6472'; ctx.font = '400 13px Inter, sans-serif'; ctx.fillText('Snapshot exported ' + new Date().toLocaleDateString('en-US',{ weekday:'long', year:'numeric', month:'long', day:'numeric' }), 32, 66);
   let y = 96;
   sortedByDueDate(projects).forEach((p, idx) => {
     const status = STATUS_DEFS[p.status] || STATUS_DEFS['not-started'];
