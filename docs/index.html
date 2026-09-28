@@ -72,6 +72,7 @@
         <label><input type="checkbox" id="fTaskExecuted" checked> Test cases executed</label>
         <label><input type="checkbox" id="fTaskBugs" checked> Track Bugs Count</label>
         <label><input type="checkbox" id="fTaskSource" checked> Source code checked</label>
+        <label><input type="checkbox" id="fTaskDepAudit" checked> Dependency Audit Done</label>
       </div>
       <div class="hint">Untick anything that doesn't apply — it won't show on this project's card</div>
     </div>
@@ -96,6 +97,7 @@ const QE_NAMES = ['Anas Shahid','Athar Farooq','Hammad Akbar','Kaneez Aysha','Gh
 const TASK_DEFS = [
   { key:'casesCreated', enabledKey:'trackCreated', label:'Test cases created' },
   { key:'casesExecuted', enabledKey:'trackExecuted', label:'Test cases executed' },
+  { key:'depAuditDone', enabledKey:'trackDepAudit', label:'Dependency Audit Done' },
   { key:'sourceChecked', enabledKey:'trackSource', label:'Source code checked' }
 ];
 const STATUS_DEFS = {
@@ -189,7 +191,6 @@ async function saveProjects(){
   if(!token){ statusEl.textContent = 'Click "Set access key" above to save changes'; return; }
 
   try {
-    // First, get the current file to retrieve the SHA
     const getRes = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${FILE_PATH}?ref=${BRANCH}`, { 
       headers:{ Authorization:`Bearer ${token}`, Accept:'application/vnd.github+json' }
     });
@@ -204,7 +205,6 @@ async function saveProjects(){
     }
     currentSha = getData.sha;
 
-    // Now save the file with the correct SHA
     const putRes = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${FILE_PATH}`, {
       method:'PUT',
       headers:{ Authorization:`Bearer ${token}`, Accept:'application/vnd.github+json' },
@@ -341,7 +341,7 @@ function render(){
         ${tasks.some(t => t.key === 'sourceChecked') ? `<label class="task-row ${p.sourceChecked ? 'done' : ''}"><input type="checkbox" data-task="sourceChecked" data-id="${p.id}" ${p.sourceChecked ? 'checked' : ''}> Source code checked</label>` : ''}
         <div class="card-footer-row"><button class="qe-edit-btn" data-task-toggle="${p.id}">${openTaskEditorId === p.id ? 'Done' : 'Edit tracking items'}</button><button class="qe-edit-btn" data-delete="${p.id}">Delete</button></div>
       </div>
-      ${openTaskEditorId === p.id ? `<div class="checkbox-group qe-editor" style="margin-top:10px;padding-top:10px;border-top:1px solid var(--border);"><label><input type="checkbox" data-track="trackCreated" data-id="${p.id}" ${p.trackCreated !== false ? 'checked' : ''}> Test cases created</label><label><input type="checkbox" data-track="trackExecuted" data-id="${p.id}" ${p.trackExecuted !== false ? 'checked' : ''}> Test cases executed</label><label><input type="checkbox" data-track="trackBugs" data-id="${p.id}" ${p.trackBugs !== false ? 'checked' : ''}> Track Bugs Count</label><label><input type="checkbox" data-track="trackSource" data-id="${p.id}" ${p.trackSource !== false ? 'checked' : ''}> Source code checked</label></div>` : ''}
+      ${openTaskEditorId === p.id ? `<div class="checkbox-group qe-editor" style="margin-top:10px;padding-top:10px;border-top:1px solid var(--border);"><label><input type="checkbox" data-track="trackCreated" data-id="${p.id}" ${p.trackCreated !== false ? 'checked' : ''}> Test cases created</label><label><input type="checkbox" data-track="trackExecuted" data-id="${p.id}" ${p.trackExecuted !== false ? 'checked' : ''}> Test cases executed</label><label><input type="checkbox" data-track="trackBugs" data-id="${p.id}" ${p.trackBugs !== false ? 'checked' : ''}> Track Bugs Count</label><label><input type="checkbox" data-track="trackDepAudit" data-id="${p.id}" ${p.trackDepAudit !== false ? 'checked' : ''}> Dependency Audit Done</label><label><input type="checkbox" data-track="trackSource" data-id="${p.id}" ${p.trackSource !== false ? 'checked' : ''}> Source code checked</label></div>` : ''}
     `;
     queueEl.appendChild(card);
   });
@@ -388,9 +388,11 @@ document.getElementById('saveBtn').addEventListener('click', () => {
     trackCreated: document.getElementById('fTaskCreated').checked,
     trackExecuted: document.getElementById('fTaskExecuted').checked,
     trackBugs: document.getElementById('fTaskBugs').checked,
+    trackDepAudit: document.getElementById('fTaskDepAudit').checked,
     trackSource: document.getElementById('fTaskSource').checked,
     casesCreated: false,
     casesExecuted: false,
+    depAuditDone: false,
     sourceChecked: false,
     bugsReported: 0
   };
@@ -406,12 +408,13 @@ document.getElementById('saveBtn').addEventListener('click', () => {
   document.getElementById('fTaskCreated').checked = true;
   document.getElementById('fTaskExecuted').checked = true;
   document.getElementById('fTaskBugs').checked = true;
+  document.getElementById('fTaskDepAudit').checked = true;
   document.getElementById('fTaskSource').checked = true;
 });
 
 document.getElementById('exportBtn').addEventListener('click', () => {
   const rows = [
-    ['Position','Project Name','Status','Environment','QE Person(s)','Dev Contact','Iteration','Due Date','Test Cases Created','Test Cases Executed','Source Code Checked','Bugs Count','Progress %'],
+    ['Position','Project Name','Status','Environment','QE Person(s)','Dev Contact','Iteration','Due Date','Test Cases Created','Test Cases Executed','Dependency Audit Done','Source Code Checked','Bugs Count','Progress %'],
     ...sortedByDueDate(projects).map((p, idx) => [
       idx + 1,
       p.name || '',
@@ -423,6 +426,7 @@ document.getElementById('exportBtn').addEventListener('click', () => {
       p.deliveryDate || '',
       p.casesCreated ? 'Yes' : 'No',
       p.casesExecuted ? 'Yes' : 'No',
+      p.depAuditDone ? 'Yes' : 'No',
       p.sourceChecked ? 'Yes' : 'No',
       p.bugsReported || 0,
       progressOf(p)
