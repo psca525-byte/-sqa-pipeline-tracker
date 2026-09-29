@@ -218,25 +218,5 @@
     "depAuditDone": false,
     "sourceChecked": false,
     "bugsReported": 0
-  },
-  {
-    "id": "mumijr3pau347",
-    "name": "honorarium Project",
-    "qeNames": "Hammad Akbar",
-    "devName": "Mohsin",
-    "iteration": "1",
-    "environment": "Staging",
-    "deliveryDate": "",
-    "status": "not-started",
-    "trackCreated": false,
-    "trackExecuted": false,
-    "trackBugs": false,
-    "trackDepAudit": false,
-    "trackSource": false,
-    "casesCreated": false,
-    "casesExecuted": false,
-    "depAuditDone": false,
-    "sourceChecked": false,
-    "bugsReported": 0
   }
 ]
