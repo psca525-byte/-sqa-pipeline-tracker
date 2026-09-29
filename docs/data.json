@@ -72,7 +72,7 @@
     "devName": "Awais",
     "iteration": "1",
     "environment": "Staging",
-    "deliveryDate": "2026-09-29",
+    "deliveryDate": "2026-10-02",
     "status": "in-progress",
     "trackCreated": true,
     "trackExecuted": true,
@@ -80,7 +80,7 @@
     "trackDepAudit": false,
     "trackSource": true,
     "casesCreated": true,
-    "casesExecuted": false,
+    "casesExecuted": true,
     "depAuditDone": false,
     "sourceChecked": false,
     "bugsReported": 0,
@@ -271,7 +271,7 @@
     "iter2Done": true,
     "iter3Done": false,
     "bugsReported": 0,
-    "redmineTicket": "https://psca-pm.psca.gop.pk/issues/3358"
+    "redmineTicket": "https://psca-pm.psca.gop.pk/issues/3425"
   },
   {
     "id": "mumkdn76v4lx2",
