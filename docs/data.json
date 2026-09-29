@@ -158,5 +158,25 @@
     "depAuditDone": false,
     "sourceChecked": false,
     "bugsReported": 0
+  },
+  {
+    "id": "mumhz1nelrvud",
+    "name": "Morning Briefe -> LTE-A Handset Tickets",
+    "qeNames": "Hammad Akbar",
+    "devName": "Abrar Ahmad",
+    "iteration": "2",
+    "environment": "Staging",
+    "deliveryDate": "2026-09-28",
+    "status": "delivered",
+    "trackCreated": true,
+    "trackExecuted": true,
+    "trackBugs": true,
+    "trackDepAudit": true,
+    "trackSource": true,
+    "casesCreated": false,
+    "casesExecuted": false,
+    "depAuditDone": false,
+    "sourceChecked": false,
+    "bugsReported": 0
   }
 ]
