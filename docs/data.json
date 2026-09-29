@@ -222,7 +222,8 @@
     "depAuditDone": false,
     "sourceChecked": false,
     "bugsReported": 0,
-    "redmineTicket": "https://psca-pm.psca.gop.pk/issues/3456"
+    "redmineTicket": "https://psca-pm.psca.gop.pk/issues/3456",
+    "iter1Done": true
   },
   {
     "id": "mumj1ik03vffg",
