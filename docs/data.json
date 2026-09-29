@@ -279,7 +279,7 @@
     "trackIter2": true,
     "trackIter3": true,
     "casesCreated": true,
-    "casesExecuted": false,
+    "casesExecuted": true,
     "depAuditDone": false,
     "sourceChecked": false,
     "iter1Done": false,
