@@ -161,7 +161,8 @@
     "depAuditDone": false,
     "sourceChecked": true,
     "bugsReported": 0,
-    "iter1Done": true
+    "iter1Done": true,
+    "trackIter3": false
   },
   {
     "id": "mumhzo2est0r4",
