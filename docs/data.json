@@ -157,7 +157,8 @@
     "casesExecuted": true,
     "depAuditDone": false,
     "sourceChecked": false,
-    "bugsReported": 0
+    "bugsReported": 0,
+    "iter1Done": true
   },
   {
     "id": "mumhzo2est0r4",
