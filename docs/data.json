@@ -59,7 +59,8 @@
     "casesExecuted": true,
     "depAuditDone": true,
     "sourceChecked": false,
-    "bugsReported": 0
+    "bugsReported": 0,
+    "iter1Done": true
   },
   {
     "id": "mum7ffx46gk8a",
