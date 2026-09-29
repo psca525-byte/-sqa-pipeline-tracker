@@ -224,7 +224,8 @@
     "bugsReported": 0,
     "redmineTicket": "https://psca-pm.psca.gop.pk/issues/3456",
     "iter1Done": true,
-    "trackIter3": false
+    "trackIter3": false,
+    "iter2Done": true
   },
   {
     "id": "mumj1ik03vffg",
