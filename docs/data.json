@@ -44,28 +44,6 @@
     "iter2Done": true
   },
   {
-    "id": "mul58pl6m9owu",
-    "name": "Emergency i App",
-    "qeNames": "Anas Shahid, Hammad Akbar",
-    "devName": "Haris",
-    "iteration": "2",
-    "environment": "Staging",
-    "deliveryDate": "2026-10-10",
-    "status": "in-progress",
-    "trackCreated": true,
-    "trackExecuted": true,
-    "trackBugs": true,
-    "trackDepAudit": true,
-    "trackSource": true,
-    "casesCreated": true,
-    "casesExecuted": true,
-    "depAuditDone": true,
-    "sourceChecked": false,
-    "bugsReported": 79,
-    "iter1Done": true,
-    "iter2Done": true
-  },
-  {
     "id": "mum7ffx46gk8a",
     "name": "NextGen Portal Testing (Regression)",
     "qeNames": "Ghazala Anayat",
