@@ -58,5 +58,25 @@
     "depAuditDone": false,
     "sourceChecked": false,
     "bugsReported": 0
+  },
+  {
+    "id": "mum7ffx46gk8a",
+    "name": "NextGen Portal Testing (Regression)",
+    "qeNames": "Ghazala Anayat",
+    "devName": "Jawad",
+    "iteration": "1",
+    "environment": "Staging",
+    "deliveryDate": "2026-10-02",
+    "status": "not-started",
+    "trackCreated": false,
+    "trackExecuted": false,
+    "trackBugs": false,
+    "trackDepAudit": true,
+    "trackSource": false,
+    "casesCreated": false,
+    "casesExecuted": false,
+    "depAuditDone": false,
+    "sourceChecked": false,
+    "bugsReported": 0
   }
 ]
