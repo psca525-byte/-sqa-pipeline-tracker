@@ -36,7 +36,7 @@
     "trackDepAudit": true,
     "trackSource": true,
     "casesCreated": false,
-    "casesExecuted": false,
+    "casesExecuted": true,
     "depAuditDone": true,
     "sourceChecked": false,
     "bugsReported": 0,
