@@ -153,11 +153,11 @@
     "trackBugs": true,
     "trackDepAudit": true,
     "trackSource": true,
-    "casesCreated": false,
-    "casesExecuted": false,
-    "depAuditDone": false,
+    "casesCreated": true,
+    "casesExecuted": true,
+    "depAuditDone": true,
     "sourceChecked": false,
-    "bugsReported": 13
+    "bugsReported": 0
   },
   {
     "id": "mumhzo2est0r4",
