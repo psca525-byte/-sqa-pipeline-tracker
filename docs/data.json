@@ -138,5 +138,25 @@
     "depAuditDone": false,
     "sourceChecked": false,
     "bugsReported": 0
+  },
+  {
+    "id": "mumhqb6s9vicb",
+    "name": "Predictive Policing",
+    "qeNames": "Hammad Akbar, Kaneez Aysha",
+    "devName": "Bilal",
+    "iteration": "2",
+    "environment": "Staging",
+    "deliveryDate": "2026-09-24",
+    "status": "delivered",
+    "trackCreated": true,
+    "trackExecuted": true,
+    "trackBugs": true,
+    "trackDepAudit": true,
+    "trackSource": true,
+    "casesCreated": false,
+    "casesExecuted": false,
+    "depAuditDone": false,
+    "sourceChecked": false,
+    "bugsReported": 0
   }
 ]
