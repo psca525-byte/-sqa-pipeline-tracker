@@ -57,7 +57,7 @@
     "trackSource": true,
     "casesCreated": true,
     "casesExecuted": true,
-    "depAuditDone": false,
+    "depAuditDone": true,
     "sourceChecked": false,
     "bugsReported": 0
   },
