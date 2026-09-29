@@ -79,7 +79,7 @@
     "trackBugs": true,
     "trackDepAudit": false,
     "trackSource": true,
-    "casesCreated": false,
+    "casesCreated": true,
     "casesExecuted": false,
     "depAuditDone": false,
     "sourceChecked": false,
