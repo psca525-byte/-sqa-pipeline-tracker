@@ -271,6 +271,11 @@ async function pollForRemoteUpdates(){
     await refreshFromViewMode();
     return;
   }
+  // Skip this poll entirely if a local save is currently in flight - otherwise
+  // this background check can read the file mid-save and briefly overwrite
+  // your just-made click with the old data before your own save lands,
+  // making edits look like they take a moment to "show up".
+  if(saveInProgress){ return; }
   const token = getToken();
   if(!token){ return; }
   try {
@@ -393,7 +398,7 @@ function render(){
         ${tasks.length === 0 && !trackBugs ? '<span class="no-tasks-note">No tracking items enabled for this project</span>' : ''}
         ${tasks.filter(t => t.key !== 'sourceChecked').map(t => `<label class="task-row ${p[t.key] ? 'done' : ''}"><input type="checkbox" data-task="${t.key}" data-id="${p.id}" ${p[t.key] ? 'checked' : ''}> ${t.label}</label>`).join('')}
         ${trackBugs ? `<label class="bug-count-row">Bugs Count:<input type="number" min="0" data-bugs="${p.id}" value="${p.bugsReported || 0}"></label>` : ''}
-        <label class="bug-count-row" style="flex-wrap:nowrap;">Redmine Ticket:<input type="text" data-redmine="${p.id}" value="${escapeHtml(p.redmineTicket || '')}" placeholder="Paste ticket URL" style="width:220px;"></label>
+        <label class="bug-count-row" style="flex-wrap:nowrap;">Redmine Ticket:<input type="text" data-redmine="${p.id}" value="${escapeHtml(p.redmineTicket || '')}" placeholder="Paste ticket URL" style="width:220px;">${p.redmineTicket ? `<a href="${escapeHtml(p.redmineTicket)}" target="_blank" rel="noopener" style="color:var(--accent);font-weight:600;text-decoration:none;">Open ↗</a>` : ''}</label>
         ${tasks.some(t => t.key === 'sourceChecked') ? `<label class="task-row ${p.sourceChecked ? 'done' : ''}"><input type="checkbox" data-task="sourceChecked" data-id="${p.id}" ${p.sourceChecked ? 'checked' : ''}> Source code checked</label>` : ''}
         <div class="card-footer-row"><button class="qe-edit-btn" data-task-toggle="${p.id}">${openTaskEditorId === p.id ? 'Done' : 'Edit tracking items'}</button><button class="qe-edit-btn" data-delete="${p.id}">Delete</button></div>
       </div>
@@ -408,7 +413,7 @@ function render(){
   queueEl.querySelectorAll('[data-env]').forEach(el => { el.addEventListener('change', () => { const proj = projects.find(p => p.id === el.getAttribute('data-env')); proj.environment = el.value; render(); saveProjects(); }); });
   queueEl.querySelectorAll('[data-task]').forEach(el => { el.addEventListener('change', () => { const proj = projects.find(p => p.id === el.getAttribute('data-id')); proj[el.getAttribute('data-task')] = el.checked; render(); saveProjects(); }); });
   queueEl.querySelectorAll('[data-bugs]').forEach(el => { el.addEventListener('change', () => { const proj = projects.find(p => p.id === el.getAttribute('data-bugs')); proj.bugsReported = parseInt(el.value) || 0; render(); saveProjects(); }); });
-  queueEl.querySelectorAll('[data-redmine]').forEach(el => { el.addEventListener('change', () => { const proj = projects.find(p => p.id === el.getAttribute('data-redmine')); proj.redmineTicket = el.value.trim(); saveProjects(); }); });
+  queueEl.querySelectorAll('[data-redmine]').forEach(el => { el.addEventListener('change', () => { const proj = projects.find(p => p.id === el.getAttribute('data-redmine')); proj.redmineTicket = el.value.trim(); render(); saveProjects(); }); });
   queueEl.querySelectorAll('[data-qe-toggle]').forEach(el => { el.addEventListener('click', () => { const id = el.getAttribute('data-qe-toggle'); openQeEditorId = openQeEditorId === id ? null : id; render(); }); });
   queueEl.querySelectorAll('[data-qe]').forEach(el => { el.addEventListener('change', () => { const proj = projects.find(p => p.id === el.getAttribute('data-qe')); const editor = el.closest('.qe-editor'); const selected = Array.from(editor.querySelectorAll('input:checked')).map(i => i.value).join(', '); proj.qeNames = selected; render(); saveProjects(); }); });
   queueEl.querySelectorAll('[data-dev]').forEach(el => { el.addEventListener('change', () => { const proj = projects.find(p => p.id === el.getAttribute('data-dev')); proj.devName = el.value.trim(); saveProjects(); }); });
@@ -546,7 +551,7 @@ document.getElementById('clearFilterLink').addEventListener('click', (e) => {
 
 buildQeCheckboxGroup();
 loadProjects();
-setInterval(pollForRemoteUpdates, 15000);
+setInterval(pollForRemoteUpdates, 4000);
 </script>
 </body>
 </html>
