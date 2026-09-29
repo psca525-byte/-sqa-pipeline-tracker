@@ -270,7 +270,7 @@
     "iter1Done": true,
     "iter2Done": true,
     "iter3Done": false,
-    "bugsReported": 0,
+    "bugsReported": 40,
     "redmineTicket": "https://psca-pm.psca.gop.pk/issues/3425"
   },
   {
