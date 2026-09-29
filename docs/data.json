@@ -17,7 +17,9 @@
     "casesExecuted": false,
     "depAuditDone": true,
     "sourceChecked": false,
-    "bugsReported": 0
+    "bugsReported": 0,
+    "iter1Done": true,
+    "iter2Done": true
   },
   {
     "id": "mul56yarvatsx",
@@ -80,7 +82,9 @@
     "casesExecuted": false,
     "depAuditDone": false,
     "sourceChecked": false,
-    "bugsReported": 0
+    "bugsReported": 0,
+    "trackIter3": false,
+    "trackIter2": false
   },
   {
     "id": "mumd09l6xh4yg",
@@ -100,7 +104,9 @@
     "casesExecuted": false,
     "depAuditDone": false,
     "sourceChecked": false,
-    "bugsReported": 0
+    "bugsReported": 0,
+    "trackIter3": false,
+    "trackIter2": false
   },
   {
     "id": "mumhlrcu5b9mm",
@@ -140,7 +146,9 @@
     "casesExecuted": true,
     "depAuditDone": false,
     "sourceChecked": false,
-    "bugsReported": 20
+    "bugsReported": 20,
+    "trackIter3": false,
+    "trackIter2": false
   },
   {
     "id": "mumhuji2k5tmo",
@@ -162,7 +170,8 @@
     "sourceChecked": true,
     "bugsReported": 0,
     "iter1Done": true,
-    "trackIter3": false
+    "trackIter3": false,
+    "trackIter2": false
   },
   {
     "id": "mumhzo2est0r4",
