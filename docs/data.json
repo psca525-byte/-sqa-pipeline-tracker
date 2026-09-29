@@ -16,7 +16,7 @@
     "casesCreated": true,
     "casesExecuted": true,
     "depAuditDone": true,
-    "sourceChecked": false,
+    "sourceChecked": true,
     "bugsReported": 0,
     "iter1Done": true,
     "iter2Done": true
