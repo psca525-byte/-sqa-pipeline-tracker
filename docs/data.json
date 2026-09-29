@@ -152,7 +152,8 @@
     "bugsReported": 0,
     "iter1Done": true,
     "trackIter3": false,
-    "trackIter2": false
+    "trackIter2": false,
+    "redmineTicket": "https://psca-pm.psca.gop.pk/issues/3471"
   },
   {
     "id": "mumhzo2est0r4",
