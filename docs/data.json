@@ -265,7 +265,7 @@
     "casesCreated": true,
     "casesExecuted": true,
     "depAuditDone": true,
-    "sourceChecked": false,
+    "sourceChecked": true,
     "iter1Done": true,
     "iter2Done": false,
     "iter3Done": false,
