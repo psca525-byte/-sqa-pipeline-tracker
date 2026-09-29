@@ -158,7 +158,7 @@
     "casesCreated": true,
     "casesExecuted": true,
     "depAuditDone": false,
-    "sourceChecked": false,
+    "sourceChecked": true,
     "bugsReported": 0,
     "iter1Done": true
   },
