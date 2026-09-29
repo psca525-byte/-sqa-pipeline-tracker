@@ -134,7 +134,7 @@
     "trackDepAudit": true,
     "trackSource": true,
     "casesCreated": true,
-    "casesExecuted": false,
+    "casesExecuted": true,
     "depAuditDone": false,
     "sourceChecked": false,
     "bugsReported": 0
