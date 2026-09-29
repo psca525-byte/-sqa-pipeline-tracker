@@ -115,7 +115,7 @@
     "iteration": "1",
     "environment": "Staging",
     "deliveryDate": "2026-09-30",
-    "status": "ready",
+    "status": "in-progress",
     "trackCreated": true,
     "trackExecuted": true,
     "trackBugs": true,
@@ -124,10 +124,11 @@
     "casesCreated": true,
     "casesExecuted": true,
     "depAuditDone": false,
-    "sourceChecked": false,
+    "sourceChecked": true,
     "bugsReported": 20,
     "trackIter3": false,
-    "trackIter2": false
+    "trackIter2": false,
+    "iter1Done": true
   },
   {
     "id": "mumhuji2k5tmo",
