@@ -204,7 +204,9 @@
     "depAuditDone": false,
     "sourceChecked": false,
     "bugsReported": 5,
-    "iter1Done": true
+    "iter1Done": true,
+    "trackIter3": false,
+    "iter2Done": true
   },
   {
     "id": "mumi9bbk6zxg5",
