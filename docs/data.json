@@ -172,8 +172,8 @@
     "environment": "Staging",
     "deliveryDate": "2026-09-21",
     "status": "delivered",
-    "trackCreated": true,
-    "trackExecuted": true,
+    "trackCreated": false,
+    "trackExecuted": false,
     "trackBugs": true,
     "trackDepAudit": false,
     "trackSource": false,
@@ -183,7 +183,9 @@
     "sourceChecked": false,
     "bugsReported": 4,
     "redmineTicket": "https://psca-pm.psca.gop.pk/issues/3332",
-    "iter1Done": true
+    "iter1Done": true,
+    "iter2Done": true,
+    "trackIter3": false
   },
   {
     "id": "mumi33jodsxn0",
