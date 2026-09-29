@@ -181,8 +181,9 @@
     "casesExecuted": true,
     "depAuditDone": false,
     "sourceChecked": false,
-    "bugsReported": 0,
-    "redmineTicket": "https://psca-pm.psca.gop.pk/issues/3332"
+    "bugsReported": 4,
+    "redmineTicket": "https://psca-pm.psca.gop.pk/issues/3332",
+    "iter1Done": true
   },
   {
     "id": "mumi33jodsxn0",
