@@ -211,7 +211,7 @@
     "iteration": "2",
     "environment": "Staging",
     "deliveryDate": "2026-09-23",
-    "status": "in-progress",
+    "status": "delivered",
     "trackCreated": false,
     "trackExecuted": true,
     "trackBugs": true,
