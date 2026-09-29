@@ -255,7 +255,7 @@
     "trackDepAudit": true,
     "trackSource": true,
     "trackIter1": true,
-    "trackIter2": false,
+    "trackIter2": true,
     "trackIter3": true,
     "casesCreated": true,
     "casesExecuted": true,
