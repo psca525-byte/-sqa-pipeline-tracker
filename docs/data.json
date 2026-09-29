@@ -221,7 +221,7 @@
     "casesExecuted": true,
     "depAuditDone": false,
     "sourceChecked": false,
-    "bugsReported": 0,
+    "bugsReported": 2,
     "redmineTicket": "https://psca-pm.psca.gop.pk/issues/3456",
     "iter1Done": true,
     "trackIter3": false,
